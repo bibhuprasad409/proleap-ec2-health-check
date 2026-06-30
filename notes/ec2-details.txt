@@ -1,0 +1,9 @@
+EC2 Instance Name: proleap-health-check-server
+AWS Region: ap-south-1
+AMI: Ubuntu Server 24.04 LTS
+Instance Type: t3.micro
+SSH Port: 22
+HTTP Port: 80
+Web Server: Nginx
+Public IP: YOUR_PUBLIC_IP
+Private IP: YOUR_PRIVATE_IP

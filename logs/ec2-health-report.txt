@@ -1,0 +1,57 @@
+========================================
+ PROLEAP EC2 HEALTH CHECK REPORT
+========================================
+Report Date : Tue Jun 30 03:54:13 UTC 2026
+Hostname : ip-172-31-17-45
+Current User: ubuntu
+Private IP : 172.31.17.45
+Public IP : 13.60.224.227
+
+========================================
+1. OPERATING SYSTEM INFORMATION
+========================================
+NAME="Ubuntu"
+VERSION="26.04 LTS (Resolute Raccoon)"
+[PASS] Operating system information collected
+
+========================================
+2. SYSTEM UPTIME
+========================================
+ 03:54:13 up  1:09,  1 user,  load average: 0.00, 0.00, 0.00
+[PASS] System uptime command executed successfully
+
+========================================
+3. CPU LOAD
+========================================
+Load Average: 0.00, 0.00, 0.00
+CPU Cores : 2
+1-Minute Load: 0.00
+[PASS] CPU load is below the available CPU core count
+
+========================================
+4. MEMORY USAGE
+========================================
+               total        used        free      shared  buff/cache   available
+Mem:           908Mi       320Mi       261Mi       2.7Mi       440Mi       588Mi
+Swap:             0B          0B          0B
+Memory Usage: 35%
+[PASS] Memory usage is below 80%
+
+========================================
+5. ROOT DISK USAGE
+========================================
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       6.7G  2.3G  4.4G  35% /
+Root Disk Usage: 35%
+[PASS] Root disk usage is below 80%
+
+========================================
+6. TOP 5 MEMORY-CONSUMING PROCESSES
+========================================
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        2706  0.2  5.0 564840 47432 ?        Ssl  03:43   0:01 /usr/libexec/fwupd/fwupd
+root         666  0.0  4.3 1959408 40292 ?       Ssl  02:45   0:00 /usr/lib/snapd/snapd
+root         746  0.0  3.4 126208 32016 ?        Ssl  02:45   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         660  0.0  3.1  46808 29504 ?        Ss   02:45   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1078  0.0  2.2 1832756 20896 ?       Ssl  02:45   0:00 /snap/amazon-ssm-agent/13009/amazon-ssm-agent
+[PASS] Top memory-consuming processes collected
