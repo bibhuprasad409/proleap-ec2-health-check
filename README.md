@@ -49,3 +49,11 @@ Bibhu Prasad Panigrahy
 
 ## Batch
 PLA - The One May 2026
+## EC2 Deployment Checklist
+
+- Launch EC2 instance
+- Configure Security Group
+- Install Nginx
+- Deploy Website
+- Run Health Check Script
+- Push Code to GitHub
